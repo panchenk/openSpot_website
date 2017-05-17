@@ -29,7 +29,7 @@ transition: all 0.2s ease 0s;
 width: 40px;	
 }
 [data-carousel-3d] [data-prev-button]:hover:before, [data-carousel-3d] [data-next-button]:hover:before {
-    background:#ff5f83;color: #fff;
+    background:#ff7a81;color: #fff;
 }
 /* line 10, ../../styles/common/jquery.carousel-3d.scss */
 [data-carousel-3d] [data-next-button] {

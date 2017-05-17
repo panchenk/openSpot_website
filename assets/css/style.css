@@ -29,7 +29,7 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 body {
-font-family: 'Lato', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 font-size: 16px;
 font-weight: 300;
 line-height: 24px;
@@ -175,7 +175,7 @@ width: 80px;
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #ff5f83 !important;
+    color: #41CDBD !important;
     background-color: transparent;
 }
 .navbar-default .navbar-nav>.open>a,
@@ -198,7 +198,7 @@ font-weight: 600;
 letter-spacing: 2px;
 text-transform: uppercase;
 }
-.menu-top li a:hover { color: #ff5f83!important }
+.menu-top li a:hover { color: #41CDBD!important }
 @media only screen and (max-width:768px) { 
     .navbar-default .navbar-nav > li > a {
         margin-top: 10px;
@@ -222,11 +222,11 @@ width: 100%;
     }
 }
 .navbar-default.menu-shrink li a {color: rgba(0, 0, 0, 0.6) !important; }
-.navbar-default.menu-shrink li a:hover { color: #ff5f83 !important }
+.navbar-default.menu-shrink li a:hover { color: #41CDBD !important }
 .navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { background-color: #fff }
-.navbar-default .navbar-toggle .icon-bar { background-color: #ff5f83 }
+.navbar-default .navbar-toggle .icon-bar { background-color: #41CDBD }
 /*
 * ----------------------------------------------------------------------------------------
 * 02.END BOOTSTRAP NAVIGATION OVERRIDES
@@ -238,7 +238,7 @@ width: 100%;
 * ----------------------------------------------------------------------------------------
 */
 .home_bg {
-    height: 700px;
+    height: 820px;
     position: relative;
 }
 @media only screen and (max-width:768px) { 
@@ -262,7 +262,7 @@ width: 100%;
 .home_bg {height: 1100px;}
 }
 .home_bg:before {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     content: "";
     height: 100%;
     filter: alpha(opacity=80);
@@ -328,7 +328,8 @@ vertical-align: middle;
     padding-top: 150px;
 }
 .hero-text-img img {
-  width: 406px;
+  width: 510px;
+
 }
 @media only screen and (max-width:768px) { 
 .hero-text-img{padding-top: 58px; }
@@ -368,8 +369,8 @@ padding-top: 112px;
 .single_about{margin-bottom: 30px;}
 }
 .single_about:hover i{
-background: #ff5f83 none repeat scroll 0 0;
-border: 1px solid #ff5f83;
+background: #41CDBD none repeat scroll 0 0;
+border: 1px solid #41CDBD;
 color: #fff;
 }
 .single_about i{
@@ -377,7 +378,7 @@ background: #fff none repeat scroll 0 0;
 border: 1px solid #eee;
 border-radius: 100px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-color: #ff5f83;
+color: #41CDBD;
 float: left;
 height: 45px;
 line-height: 45px;
@@ -456,7 +457,7 @@ transition: all 0.2s ease 0s;
 }
 .single_feature_btn_light:hover,
 .single_feature_btn_light:focus {
-    background: #ff5f83;
+    background: #41CDBD;
     color: #fff;
 }
 /*
@@ -495,7 +496,7 @@ width: 80px;
 z-index: 3;
 }
 .single_feature:hover i{
-	background: #ff5f83;color:#fff;
+	background: #41CDBD;color:#fff;
 }
 .single_feature h3 {
     text-transform: uppercase;
@@ -584,7 +585,7 @@ margin-bottom: 0;
     .video-container h3 { font-size: 20px }
 }
 .play-video {
-background-color: #f55f83;
+background-color: #ff7a81;
 border-radius: 500px;
 cursor: pointer;
 height: 100px;
@@ -610,7 +611,7 @@ width: 100px;
 
 .video-container a { display: inline-block }
 .video-container a:hover .play-video {
-    background: #ff5f83;
+    background: #41CDBD;
     color: #fff;
 }
 .video-container a:hover .fa-play { color: #fff }
@@ -684,7 +685,7 @@ width: 100%;
 .single_more_feature:hover .single_icon span {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
-	color: #ff5f83;
+	color: #41CDBD;
 }
 .single_more_feature .single_text h3 {
 font-size: 16px;
@@ -694,7 +695,7 @@ transition-duration: 500ms;
 }
 
 .single_more_feature:hover .single_text h3 {
-	color: #ff5f83;
+	color: #41CDBD;
 }
 
 .single_more_feature .single_text p {
@@ -722,7 +723,7 @@ text-align: left;
 }
 .pricing-title{}
 .pricing-title p{
-background: #ff5f83 none repeat scroll 0 0;
+background: #41CDBD none repeat scroll 0 0;
 color: #fff;
 margin: 0;
 padding: 10px;
@@ -760,8 +761,8 @@ padding: 30px 0;
 text-align: center;
 }
 .pricing_btn a{
-background: #ff5f83 none repeat scroll 0 0;
-border: 1px solid #ff5f83;
+background: #41CDBD none repeat scroll 0 0;
+border: 1px solid #41CDBD;
 border-radius: 50px;
 color: #fff;
 font-size: 14px;
@@ -805,15 +806,15 @@ margin-bottom: 0;
 text-transform: uppercase;
 } 
 .carousel-indicators li {
-    border: 1px solid #ff5f83;
+    border: 1px solid #41CDBD;
     border-radius: 12px;
     height: 12px;
     margin: 0 1px;
     width: 5px;
-    background: #ff5f83;
+    background: #41CDBD;
 }
 .carousel-indicators .active {
-  background-color: #ff5f83;
+  background-color: #41CDBD;
   height: 18px;
   margin: 0 1px ;
   width: 5px;
@@ -833,7 +834,7 @@ text-transform: uppercase;
 * 12.START DOWNLOAD DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.download {background:#ff5f83 none repeat scroll 0 0;}
+.download {background:#41CDBD none repeat scroll 0 0;}
 .download_icon h2 {
   color: #fff;
   font-size: 48px;
@@ -874,7 +875,7 @@ margin-bottom: 30px;
 }
 .signup_form input:focus{
 box-shadow: none;
-border:1px solid #ff5f83;
+border:1px solid #41CDBD;
 border-radius: 0;
 }
 .signup_form button  {
@@ -890,7 +891,7 @@ transition: all 0.2s ease 0s;
 }
 .signup_form button:hover,
 .signup_form button:focus {
-    background: #ff5f83;
+    background: #41CDBD;
     color: #fff;
 }
 /*
@@ -925,12 +926,12 @@ width: 100%;
 font-size:16px;
 }
 .contact input:focus {
-border: 1px solid #ff5f83;
+border: 1px solid #41CDBD;
     box-shadow: none;
     outline: 0 none;
 }
 .contact textarea:focus {
-border: 1px solid #ff5f83;
+border: 1px solid #41CDBD;
     box-shadow: none;
     outline: 0 none;
 }
@@ -947,7 +948,7 @@ transition: all 0.2s ease 0s;
 }
 .btn-contact-bg:hover,
 .btn-contact-bg:focus {
-    background: #ff5f83;
+    background: #41CDBD;
     color: #fff;
 }
 /*
@@ -1011,7 +1012,7 @@ text-align: center;
 transition: all 0.2s ease 0s;
 width: 48px;
 }
-.footer_social ul li a:hover { color: #ff5f83 }
+.footer_social ul li a:hover { color: #41CDBD }
 /*END FOOTER SOCIAL DESIGN*/
 .copyright p {
 color:#fff;
