@@ -30,6 +30,14 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("user_HYTJQkYjEoj6NyemqqK15");
+        })();
+
+        </script>
 	</head>
 	
     <body data-spy="scroll" data-offset="80">
@@ -58,7 +66,8 @@
 					<nav>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a class="page-scroll" href="#home">Home</a></li>
-							<li><a class="page-scroll" href="#feature">Features</a></li>						
+							<li><a class="page-scroll" href="#feature">Features</a></li>
+							<li><a class="page-scroll" href="#team">Our Team</a></li>
 							<li><a class="page-scroll" href="#screenshots">Screenshots</a></li>						
 							<li><a class="page-scroll" href="#pricing">Pricing</a></li>						
 							<li><a class="page-scroll" href="#download">Download</a></li>						
@@ -167,7 +176,7 @@
 		<!-- END FEATURED ONE -->
 
 		<!-- START MAIN FEATURES -->
-		<section class="why_choose_us section-padding">
+		<section id="team" class="why_choose_us section-padding">
 			<div class="container">
 				<div class="row">
 					<div class="section-title text-center wow zoomIn">
@@ -249,7 +258,7 @@
 		<!-- END APP SCREENSHOT -->
 		
 		<!-- START HOW IT WORKS -->
-		<section class="about_video" style="background-image: url(assets/img/bg/video-bg.jpg); background-size:cover; background-position: center center;background-attachment:fixed;">
+		<section class="about_video" style="background-image: url(assets/img/bg/Hotel-Parking.jpg); background-size:cover; background-position: center center;background-attachment:fixed;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -384,7 +393,7 @@
 								<p>Starter</p>
 							</div>
 							<div class="pricing-price">
-								<p><sup>$ </sup>8.00</p>
+								<p><sup>$</sup>8/mo</p>
 							</div>
 							<div class="pricing-features">
 								<p>Fully Responsive</p>
@@ -403,7 +412,7 @@
 								<p>Popular</p>
 							</div>
 							<div class="pricing-price">
-								<p><sup>$ </sup>12.00</p>
+								<p><sup>$</sup>12/mo</p>
 							</div>
 							<div class="pricing-features">
 								<p>Fully Responsive</p>
@@ -422,7 +431,7 @@
 								<p>Business</p>
 							</div>
 							<div class="pricing-price">
-								<p><sup>$ </sup>16.00</p>
+								<p><sup>$</sup>16/mo</p>
 							</div>
 							<div class="pricing-features">
 								<p>Fully Responsive</p>
@@ -441,7 +450,7 @@
 								<p>Enterprise</p>
 							</div>
 							<div class="pricing-price">
-								<p><sup>$ </sup>20.00</p>
+								<p><sup>$</sup>20/mo</p>
 							</div>
 							<div class="pricing-features">
 								<p>Fully Responsive</p>
@@ -567,7 +576,7 @@
 					</div>								
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="contact">
-							<form id="contact-form" method="post" enctype="multipart/form-data">
+							<form id="contact-form">
 								<div class="row">
 									<div class="form-group col-md-4">
 										<input type="text" name="name" class="form-control" placeholder="Name" required="required">
@@ -669,5 +678,23 @@
 			<script src="assets/js/wow.min.js"></script>			
 		<!-- scripts js -->
 			<script src="assets/js/scripts.js"></script>
+
+			<script type="text/javascript">
+			    $("#yourButtonId2").click
+				(function()
+				{
+					var name = $('#name').val();
+					var email = $('#email').val();
+					var message = $('#message').val();
+					// console.log(name + email + message);
+					// console.log("button pressed");
+					emailjs.send("default_service","template_dYMGng2i",{from_name: name, email: email, message: message});
+
+				}
+				);
+			</script>
+
+
+			
     </body>
 </html>
