@@ -160,12 +160,14 @@ width: 80px;
 * ----------------------------------------------------------------------------------------
 */
 .navbar-default {
+    background:rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    color: rgba(0, 0, 0, 0.6) !important;
     border: none;
     border-radius: 0;
     margin-bottom: 0;
     width: 100%;
     padding: 20px 0;
-    background: none;
+    /* background: none; */
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -192,7 +194,8 @@ width: 80px;
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form { border-color: #fff }
 .menu-top li a {
-color: #fff !important;
+/* color: #fff !important; */
+color: rgba(0, 0, 0, 0.6) !important;
 font-size: 12px;
 font-weight: 600;
 letter-spacing: 2px;
