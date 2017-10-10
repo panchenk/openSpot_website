@@ -577,7 +577,7 @@
 						<!-- <p>Input your in.</p> -->
 						<div id="book" class="alert alert-success alert-dismissible" role="alert" style="display: none">
 							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<strong>Success!</strong> message has beed sent!
+							<strong>Success!</strong> message has beenn sent!
 						</div>
 					</div>								
 					<div class="col-md-12 col-sm-12 col-xs-12">
@@ -763,7 +763,7 @@ $("#createAccount").on( "click",
 					// var message = $('#message').val();
 					// console.log(name + email + message);
 					console.log("button pressed");
-					//emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, message: message});
+					emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, message: message});
 					$('#name_acc').val("");
 					$('#email_acc').val("");
 					$('#password_acc').val("");
@@ -801,7 +801,7 @@ $("#createAccount").on( "click",
 					var message = $('#message').val();
 					console.log(name + email + message);
 					console.log("button pressed");
-					//emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, message: message});
+					emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, message: message});
 					$('#name').val("");
 					$('#email').val("");
 					$('#message').val("");
