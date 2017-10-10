@@ -801,7 +801,11 @@ $("#createAccount").on( "click",
 					var message = $('#message').val();
 					console.log(name + email + message);
 					console.log("button pressed");
-					emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, message: message});
+					emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, message: message}).then(function(response) {
+					console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+					}, function(err) {
+					console.log("FAILED. error=", err);
+					});;
 					$('#name').val("");
 					$('#email').val("");
 					$('#message').val("");
