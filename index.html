@@ -763,10 +763,6 @@ $("#createAccount").on( "click",
 					// var message = $('#message').val();
 					// console.log(name + email + message);
 					console.log("button pressed");
-					emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, message: message});
-					$('#name_acc').val("");
-					$('#email_acc').val("");
-					$('#password_acc').val("");
 
 					// $( "#book" ).show();
 					// $( "#book" ).fadeOut( 4000, function() {});
@@ -774,6 +770,11 @@ $("#createAccount").on( "click",
 				  	function()
 				  	{
 				  		alert("Thanks! Your account was successfully created");
+						emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, account: "NEW ACCOUNT WAS CREATED"});
+						$('#name_acc').val("");
+						$('#email_acc').val("");
+						$('#password_acc').val("");
+						  
 				  	}
 				  	).catch(function(error) {
 				  // Handle Errors here.
@@ -805,7 +806,7 @@ $("#createAccount").on( "click",
 					console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 					}, function(err) {
 					console.log("FAILED. error=", err);
-					});;
+					});
 					$('#name').val("");
 					$('#email').val("");
 					$('#message').val("");
