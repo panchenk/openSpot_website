@@ -770,7 +770,11 @@ $("#createAccount").on( "click",
 				  	function()
 				  	{
 				  		alert("Thanks! Your account was successfully created");
-						emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, account: "NEW ACCOUNT WAS CREATED"});
+						emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, account: "NEW ACCOUNT WAS CREATED"}).then(function(response) {
+					console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+					}, function(err) {
+					console.log("FAILED. error=", err);
+					});
 						$('#name_acc').val("");
 						$('#email_acc').val("");
 						$('#password_acc').val("");
