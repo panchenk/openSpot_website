@@ -770,7 +770,7 @@ $("#createAccount").on( "click",
 				  	function()
 				  	{
 				  		alert("Thanks! Your account was successfully created");
-						emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: name, email: email, account: "NEW ACCOUNT WAS CREATED"}).then(function(response) {
+						emailjs.send("dml1002313_gmail_com","template_dYMGng2i",{from_name: $('#name_acc').val(), email: $('#email_acc').val(), message: "THIS USER JUST CREATED AN ACCOUNT"}).then(function(response) {
 					console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 					}, function(err) {
 					console.log("FAILED. error=", err);
