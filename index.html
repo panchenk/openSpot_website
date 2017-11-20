@@ -16,7 +16,7 @@
 		<title>OnTheSpot Parking - Make Parking a Breeze</title>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109661100-1"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109661100-1"></script> -->
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -24,6 +24,18 @@
 
 		gtag('config', 'UA-109661100-1');
 		</script>
+
+		<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-109661100-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
 
 		
 		<!-- Latest Bootstrap min CSS -->
@@ -666,7 +678,11 @@
 										<textarea rows="6" id="message" class="form-control" placeholder="Your Message" required="required"></textarea>
 									</div>
 									<div class="col-md-12 text-center">
-										<button type="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!">Send Message</button>
+										<button type="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!" class="custom-button-black" onClick="ga('send', 'event', {
+											'eventCategory': 'Category',
+											'eventAction': 'Action',
+											'eventLabel': 'Label'
+										});">Send Message</button>
 										
 									</div>
 								</div>
@@ -777,12 +793,15 @@
 $("#createAccount").on( "click",
 				function(event)
 				{
-					ga('send', {
-						hitType: 'event',
-						eventCategory: 'AccountCreated',
-					});
-					pageTracker._trackEvent('Videos', 'Play', 'Baby\'s First Birthday');
 					event.preventDefault();
+					// ga('send', {
+					// 	hitType: 'event',
+					// 	eventCategory: 'AccountCreated',
+					// });
+
+					
+										
+					pageTracker._trackEvent('Videos', 'Play', 'Baby\'s First Birthday');
 					var email = $('#email_acc').val();
 					var password = $('#password_acc').val();
 					// var message = $('#message').val();
@@ -833,13 +852,13 @@ $("#createAccount").on( "click",
 			    $("#submitButton").on( "click",
 				function(event)
 				{
+					event.preventDefault();
 
 					ga('send', {
 						hitType: 'event',
 						eventCategory: 'QuestionSubmitted',
 					});
 
-					event.preventDefault();
 					var name = $('#name').val();
 					var email = $('#email').val();
 					var message = $('#message').val();
