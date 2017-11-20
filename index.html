@@ -777,6 +777,11 @@
 $("#createAccount").on( "click",
 				function(event)
 				{
+					ga('send', {
+						hitType: 'event',
+						eventCategory: 'AccountCreated',
+					});
+					pageTracker._trackEvent('Videos', 'Play', 'Baby\'s First Birthday');
 					event.preventDefault();
 					var email = $('#email_acc').val();
 					var password = $('#password_acc').val();
@@ -828,6 +833,12 @@ $("#createAccount").on( "click",
 			    $("#submitButton").on( "click",
 				function(event)
 				{
+
+					ga('send', {
+						hitType: 'event',
+						eventCategory: 'QuestionSubmitted',
+					});
+
 					event.preventDefault();
 					var name = $('#name').val();
 					var email = $('#email').val();
