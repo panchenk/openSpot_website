@@ -688,11 +688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<textarea rows="6" id="message" class="form-control" placeholder="Your Message" required="required"></textarea>
 									</div>
 									<div class="col-md-12 text-center">
-										<button type="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!" class="custom-button-black" onClick="ga('send', 'event', {
-											'eventCategory': 'Category',
-											'eventAction': 'Action',
-											'eventLabel': 'Label'
-										});">Send Message</button>
+										<button type="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!" class="custom-button-black">Send Message</button>
 										
 									</div>
 								</div>
@@ -804,10 +800,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				function(event)
 				{
 					event.preventDefault();
-					ga('send', {
-						hitType: 'event',
-						eventCategory: 'AccountCreated',
-					});
+
 
 					
 										
@@ -864,10 +857,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				{
 					event.preventDefault();
 
-					ga('send', {
-						hitType: 'event',
-						eventCategory: 'QuestionSubmitted',
-					});
+
 
 					var name = $('#name').val();
 					var email = $('#email').val();
