@@ -790,18 +790,18 @@
 			  };
 			  firebase.initializeApp(config);
 
-$("#createAccount").on( "click",
+				$("#createAccount").on( "click",
 				function(event)
 				{
 					event.preventDefault();
-					// ga('send', {
-					// 	hitType: 'event',
-					// 	eventCategory: 'AccountCreated',
-					// });
+					ga('send', {
+						hitType: 'event',
+						eventCategory: 'AccountCreated',
+					});
 
 					
 										
-					pageTracker._trackEvent('Videos', 'Play', 'Baby\'s First Birthday');
+					// pageTracker._trackEvent('Videos', 'Play', 'Baby\'s First Birthday');
 					var email = $('#email_acc').val();
 					var password = $('#password_acc').val();
 					// var message = $('#message').val();
